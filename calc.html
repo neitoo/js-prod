@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Калькулятор</title>
+    <script src="scripts/m-calculator.js" defer></script>
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container w-50 pt-5">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="w-50 rounded-4 my-5" style="background-color: #33393e">
+          <div class="container-fluid text-center">
+            <h1 class="text-center">Калькулятор</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-4 w-60 text-center">
+      <div class="d-grid gap-3 d-md-flex justify-content-md-around my-2">
+        <div class="col">
+          <label for="number-a">Значение A</label>
+          <input
+            id="number-a"
+            type="number"
+            class="my-3 py-2 bg-dark form-control mb-2 text-light"
+          />
+        </div>
+        <div class="col">
+          <label for="number-a">Значение B</label>
+          <input
+            id="number-b"
+            type="number"
+            class="my-3 py-2 bg-dark form-control mb-2 text-light"
+          />
+        </div>
+      </div>
+      <div class="d-grid gap-3 d-md-flex justify-content-md-around">
+        <button
+          id="plus"
+          type="button"
+          class="w-100 py-2 btn btn-lg btn-outline-info"
+        >
+          +
+        </button>
+        <button
+          id="minus"
+          type="button"
+          class="w-100 py-2 btn btn-lg btn-outline-info"
+        >
+          -
+        </button>
+        <button
+          id="mnoz"
+          type="button"
+          class="w-100 py-2 btn btn-lg btn-outline-info"
+        >
+          *
+        </button>
+        <button
+          id="dele"
+          type="button"
+          class="w-100 py-2 btn btn-lg btn-outline-info"
+        >
+          /
+        </button>
+      </div>
+      <div class="d-grid my-4">
+        <button id="input-btn" class="btn btn-light" type="button">
+          Вычислить
+        </button>
+      </div>
+
+      <div class="card text-bg-light mb-3">
+        <h4 class="card-header">Результат</h4>
+        <div class="card-body">
+          <p id="result" class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
