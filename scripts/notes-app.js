@@ -17,8 +17,8 @@ function getNoteTemplate(note,index){
         <li class="list-group-item d-flex justify-content-between align-items-center rounded my-1">
             <span class="${note.completed ? 'text-decoration-line-through' : ''}">${note.title}</span>
             <span>
-            <span class="btn btn-small btn-${note.completed ? 'secondary' : 'success'}" data-index="${index}" data-type="toggle">&check;</span>
-            <span class="btn btn-small btn-danger" data-index="${index}" data-type="remove">&times;</span>
+            <span class="btn my-1 btn-small btn-${note.completed ? 'secondary' : 'success'}" data-index="${index}" data-type="toggle">&check;</span>
+            <span class="btn my-1 btn-small btn-danger" data-index="${index}" data-type="remove">&times;</span>
             </span>
         </li>
     `;
